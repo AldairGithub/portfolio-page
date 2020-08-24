@@ -1,6 +1,8 @@
 import React from 'react'
 import './home.css'
 
+import Footer from '../footer/footer'
+
 export default function Home() {
   return (
     <div className='home-container'>
@@ -14,6 +16,7 @@ export default function Home() {
       <div className='description-container'>
         <p>With a background in law and customer experience, I love to focus on user-friendly experience and create web applications using React.js</p>
       </div>
+      <Footer />
     </div>
   )
 }
