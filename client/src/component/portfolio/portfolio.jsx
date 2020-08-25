@@ -27,7 +27,8 @@ export default function Portfolio() {
           <a
             style={projectLink}
             href='https://ecommerce-marketplace.netlify.app/'
-            target='_blank'>
+            target='_blank'
+            rel="noopener noreferrer">
             <Data
               img={project3}
               title={'Ecommerce Marketplace'}
@@ -40,7 +41,8 @@ export default function Portfolio() {
           <a
             style={projectLink}
             href='https://weather-app-simplified.netlify.app/'
-            target='_blank'>
+            target='_blank'
+            rel="noopener noreferrer">
             <Data
               img={project2}
               title={'Weather App Simplified'}
@@ -53,7 +55,8 @@ export default function Portfolio() {
           <a
             style={projectLink}
             href='https://pages.git.generalassemb.ly/acarneiro/random-pokemon-team-generator/#'
-            target='_blank'>
+            target='_blank'
+            rel="noopener noreferrer">
             <Data
               img={project1}
               title={'Random Pokemon Generator'}
