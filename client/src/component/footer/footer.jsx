@@ -8,7 +8,7 @@ export default function Footer() {
       <div className='footer-container'>
         <Link to='/'>Home</Link>
         <Link to='/portfolio'>Portfolio</Link>
-        <Link path='#'>Contact Me</Link>
+        <Link to='/contact'>Contact Me</Link>
       </div>
     </div>
   )

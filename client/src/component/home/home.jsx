@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='home-container'>
       <div>
-        <img className='self' src={ require('./SELF.JPG')} />
+        <img className='self' src={require('./SELF.JPG')} alt={'Aldair Carneiro Selfie'}/>
       </div>
       <div className='title-container'>
         <h1>Hello! My name is Aldair Carneiro</h1>
