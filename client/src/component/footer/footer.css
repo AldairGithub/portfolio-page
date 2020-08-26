@@ -1,0 +1,28 @@
+.footer-position {
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  background-color: white;
+}
+
+.footer-container {
+  padding-top: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 375px) {
+  .footer-position {
+    height: 60px;
+  }
+  .footer-container {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+}

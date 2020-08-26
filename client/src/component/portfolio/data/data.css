@@ -1,0 +1,52 @@
+.dataContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.portfolioImg {
+  width: 40%;
+}
+
+.textContainer {
+  width: 30%;
+  font-size: 80%;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .dataContainer {
+    flex-flow: column wrap;
+    width: 80%;
+    height: 100%;
+  }
+
+  .portfolioImg {
+    width: 80%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+
+  .textContainer {
+    width: 80%;
+    margin-left: 0;
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dataContainer {
+    width: 80%;
+  }
+  .portfolioImg {
+    width: 50%;
+  }
+  .textContainer {
+    font-size: 100%;
+  }
+}

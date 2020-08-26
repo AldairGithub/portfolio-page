@@ -1,0 +1,23 @@
+.portfolioContainer {
+  padding-top: 60px;
+}
+
+.projectContainer {
+  margin-bottom: 5%;
+}
+/* fixes footer hidding content */
+.clear {
+  clear: both;
+  height: 80px;
+}
+
+.projectLink {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  .projectContainer {
+    margin-bottom: 11%;
+  }
+}
