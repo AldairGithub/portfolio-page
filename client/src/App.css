@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+html {
+  color: black;
+  background-image: url('./dan-calderwood-4elUg_nmH4Y-unsplash.jpg');
+  height: 100%;
+  width: 100;
+}
+
+/* changes font to all child component */
+h1, p, a{
+  font-family: 'Epilogue', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}

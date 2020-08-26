@@ -1,4 +1,5 @@
 import React from 'react'
+import './portfolio.css'
 
 import Data from '../portfolio/data/data'
 import Footer from '../footer/footer'
@@ -8,24 +9,13 @@ import project2 from './project2.png'
 import project3 from './project3.png'
 
 export default function Portfolio() {
-  const title = {
-    textAlign: 'center',
-  }
-  const projectContainer = {
-    marginBottom: '40px'
-  }
-  
-  const projectLink = {
-    textDecoration: 'none',
-    color: 'black'
-  }
+
   return (
     <>
-      <div>
-        <h1 style={title}>Portfolio</h1>
-        <div style={projectContainer}>
+      <div className='portfolioContainer'>
+        <div className='projectContainer'>
           <a
-            style={projectLink}
+            className='projectLink'
             href='https://ecommerce-marketplace.netlify.app/'
             target='_blank'
             rel="noopener noreferrer">
@@ -37,9 +27,9 @@ export default function Portfolio() {
           </a>
         </div>
 
-        <div style={projectContainer}>
+        <div className='projectContainer'>
           <a
-            style={projectLink}
+            className='projectLink'
             href='https://weather-app-simplified.netlify.app/'
             target='_blank'
             rel="noopener noreferrer">
@@ -51,9 +41,9 @@ export default function Portfolio() {
           </a>
         </div>
         
-        <div style={projectContainer}>
+        <div className='projectContainer'>
           <a
-            style={projectLink}
+            className='projectLink'
             href='https://pages.git.generalassemb.ly/acarneiro/random-pokemon-team-generator/#'
             target='_blank'
             rel="noopener noreferrer">
@@ -66,6 +56,7 @@ export default function Portfolio() {
         </div>
 
       </div>
+      <div className='clear'></div>
       <Footer />
     </>
   )

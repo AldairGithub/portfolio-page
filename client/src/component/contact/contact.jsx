@@ -7,8 +7,11 @@ import Footer from '../footer/footer'
 
 export default function Contact() {
   const contactContainer = { 
-    marginTop: '10%',
-    marginLeft: '10%'
+    width: '30%',
+    marginTop: '5%',
+    marginLeft: '5%',
+    padding: '5% 0 5% 5%',
+    background: 'rgba(255, 255, 255, 0.8)'
   }
   const title = { 
     marginBottom: '50px'
@@ -49,11 +52,12 @@ export default function Contact() {
           </a>
       </div>
     </div>
-      
+
+      <Footer />
+            
     <div style={attribution}>
-      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target='_blank' rel="noopener noreferrer">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target='_blank' rel="noopener noreferrer"> www.flaticon.com</a>
     </div>
-    <Footer />
     </>
   )
 }

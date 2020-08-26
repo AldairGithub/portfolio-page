@@ -7,18 +7,38 @@
 
 .home-container {
   text-align: center;
-  margin-top: 150px;
+  padding-top: 10%;
   display: flex;
   flex-flow: column nowrap;
+  background-image: url('../../dan-calderwood-4elUg_nmH4Y-unsplash.jpg');
+  color: white;
 }
+
 .title-container {
   margin-bottom: 20px;
 }
-.title-container h1{
+
+.title-name{
+  font-size: 40px;
+}
+.title-role{
   font-size: 20px;
 }
 
 .description-container {
   margin: auto;
-  width: 30%;
+  width: 50%;
+}
+
+.attribution {
+  margin: 0 0 10px 20px;
+  font-size: 20%;
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .attribution {
+    font-size: 5%;
+  }
 }
