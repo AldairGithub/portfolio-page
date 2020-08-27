@@ -29,15 +29,17 @@
   margin: auto;
   width: 50%;
 }
-
-@media only screen and (max-width: 375px) {
-  .attribution {
-    font-size: 5%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .home-container {
     padding-top: 30%;
   }
 }
+@media only screen and (max-width: 375px) {
+  .home-container {
+    padding-top: 10%;
+  }
+  .attribution {
+    font-size: 5%;
+  }
+}
+
