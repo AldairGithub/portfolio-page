@@ -7,12 +7,14 @@ import Footer from '../footer/footer'
 import project1 from './project1.png'
 import project2 from './project2.png'
 import project3 from './project3.png'
+import project4 from './project4.png'
 
 export default function Portfolio() {
 
   return (
     <>
       <div className='portfolioContainer'>
+        
         <div className='projectContainer'>
           <a
             className='projectLink'
@@ -24,6 +26,19 @@ export default function Portfolio() {
               title={'Ecommerce Marketplace'}
               description={'Create and display items other users can buy based on categories as well as price range'}
             />
+          </a>
+        </div>
+
+        <div className='projectContainer'>
+          <a
+            className='projectLink'
+            href='https://space-tank.netlify.app/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <Data
+              img={project4}
+              title={'A New Space'}
+              description={'Connects users with a playlist or radio preference centered around the user\'s style'}/>
           </a>
         </div>
 
