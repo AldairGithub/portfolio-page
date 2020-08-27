@@ -30,13 +30,6 @@
   width: 50%;
 }
 
-.attribution {
-  margin: 0 0 10px 20px;
-  font-size: 20%;
-  position: fixed;
-  bottom: 0;
-}
-
 @media only screen and (max-width: 375px) {
   .attribution {
     font-size: 5%;
