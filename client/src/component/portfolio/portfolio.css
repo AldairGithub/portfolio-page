@@ -18,6 +18,9 @@
 
 @media only screen and (max-width: 375px) {
   .projectContainer {
-    margin-bottom: 11%;
+    margin-bottom: 19%;
+  }
+  .clear {
+    height: 120px;
   }
 }

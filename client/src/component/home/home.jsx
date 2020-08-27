@@ -20,12 +20,8 @@ export default function Home() {
       </div>
 
       <Footer />
-
+      <div className='clear'></div>
     </div>
-      
-      <div className='attribution'>
-        <span>Photo by <a href="https://unsplash.com/@dancalders?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target='_blank' rel="noopener noreferrer">Dan Calderwood</a> on <a href="https://unsplash.com/backgrounds/art/smoke?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target='_blank' rel="noopener noreferrer">Unsplash</a></span>
-      </div>
     </>
   )
 }

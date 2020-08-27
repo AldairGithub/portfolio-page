@@ -4,7 +4,7 @@
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  height: 80px;
+  height: 100px;
   background-color: white;
 }
 
@@ -16,13 +16,39 @@
   justify-content: space-evenly;
   align-items: flex-end;
 }
+.attribution-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.attribution {
+  margin: 0 0 10px 20px;
+  font-size: 20%;
+  color: black;
+}
 
 @media only screen and (max-width: 375px) {
   .footer-position {
-    height: 60px;
+    height: 15%;
   }
   .footer-container {
     padding-top: 20px;
     font-size: 15px;
+  }
+  .attribution-container {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .attribution {
+    font-size: 3%;
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer-position {
+    height: 18%;
   }
 }
