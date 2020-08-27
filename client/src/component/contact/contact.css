@@ -1,8 +1,12 @@
+.contact {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
 .contactContainer {
-  width: 30%;
+  width: 50%;
   margin-top: 5%;
-  margin-left: 5%;
-  padding: 5% 0 5% 5%;
+  padding: 4%;
   background: rgba(255,255,255,0.8);
 }
 
@@ -24,17 +28,63 @@
 .imgContainer {
   margin-right: 20px;
 }
-
-@media only screen and (max-width: 375px) {
-  .contactContainer {
-    margin-top: 20%;
-    width: 85%;
-  }
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
 }
+.contactInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+}
+.contactInput {
+  width: 45%;
+  padding: 5px 0 5px 0;
+}
+.contactBox {
+  width: 99%;
+  padding-top: 5px;
+  margin-bottom: 25px;
+}
+.contactText {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.submitButton {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(150,150,150);
+  color: white;
+}
+.submitButton:hover {
+  background-color: rgba(100, 100, 100, 0.5);
+  color: black;
+  cursor: pointer;
+  transition: 500ms;
+}
+
 
 @media only screen and (max-width: 768px) {
   .contactContainer {
-    margin-top: 40%;
-    width: 60%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contactContainer {
+    width: 85%;
+  }
+  .contactInput {
+    width: 100%;
+  }
+  .contactText {
+    flex-flow: column nowrap;
   }
 }
