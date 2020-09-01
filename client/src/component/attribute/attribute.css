@@ -1,0 +1,28 @@
+.visible {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.not-visible {
+  display: none;
+}
+
+.attribution {
+  margin: 0 0 10px 20px;
+  font-size: 20%;
+  color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  .attribution-container {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .attribution {
+    font-size: 3%;
+    margin: 0;
+    padding-left: 10px;
+  }
+}

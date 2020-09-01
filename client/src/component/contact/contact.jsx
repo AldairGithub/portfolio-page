@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './contact.css'
 
-import GitHubIcon from './GitHub-Mark-32px.png'
-import LinkedInIcon from './linkedin.png'
+import { Alert } from 'react-bootstrap'
 
-import Footer from '../footer/footer'
 
 export default function Contact() {
+  const [send, setSend] = useState('SEND')
+
   const [contact, setContact] = useState({
     name: '',
     email: '',
@@ -41,19 +41,19 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({"form-name": "contact", ...contact })
     })
-      .then(() => alert('Success!'))
+      .then(() =>
+      alert('Thank you for your message!')
+    )
       .catch(error => alert(error))
     e.preventDefault()
     resetForm()
   }
-
   return (
     <>
-      <div className='contact'>
+      <div id='contact' className='contact'>
         <div className='contactContainer'>
           <div className='contactInfo'>
             <h1 className='title'>Contact Me</h1>
-            
             <form
               className='contactForm'
               onSubmit={handleSubmit}
@@ -89,25 +89,17 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder='Message'
               />
-              <button className='submitButton' type='submit'>Send</button>
+              <button className='submitButton' type='submit'>SEND</button>
             </form>
-            
-            <p className='paragraph'>Business Inquiries:</p>
-        
-            <p className='paragraph'>aldaircarneirovera@gmail.com</p>
+            <div className='personal-email-container'>
+              <p className='paragraph'>Business Inquiries:</p>
+              <a href='mailto:aldaircarneirovera@gmail.com' target='_blank' rel="noopener noreferrer" className='paragraph email'>aldaircarneirovera@gmail.com</a>
+            </div>
           </div>
-
-        <div className='iconContainer'>
-          <a href='https://github.com/AldairGithub' target='_blank' rel="noopener noreferrer">
-            <img className='imgContainer' src={GitHubIcon} alt={'GitHub Icon Link'}/>
-          </a>
-          <a href='https://www.linkedin.com/in/aldair-carneiro/' target='_blank' rel="noopener noreferrer">
-            <img className='imgContainer' src={LinkedInIcon} alt={'LinkedIn Icon Link'}/>
-          </a>
       </div>
       </div>
-      </div>
-      <Footer />
+      <div className='clear'></div>
+      <div className='clear'></div>
     </>
   )
 }

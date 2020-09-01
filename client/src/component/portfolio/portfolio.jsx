@@ -13,7 +13,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <div className='portfolioContainer'>
+      <div id='portfolio' className='portfolioContainer'>
         
         <div className='projectContainer'>
           <a
@@ -72,7 +72,7 @@ export default function Portfolio() {
 
       </div>
       <div className='clear'></div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
