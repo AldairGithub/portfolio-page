@@ -35,6 +35,28 @@ export default function Home() {
           <p>With a background in law and customer experience, I love to focus on user-friendly experience and create web applications using React.js</p>
         </div>
           
+        <div className='language-icons-container'>
+            <i className="icon devicon-html5-plain-wordmark colored"></i>
+            <i className="icon devicon-css3-plain-wordmark colored"></i>
+            <i className="icon devicon-javascript-plain"></i>
+            <i className="icon devicon-bootstrap-plain-wordmark colored"></i>
+            <i className="icon devicon-devicon-plain colored"></i>
+            <i className="icon devicon-express-original-wordmark colored"></i>
+            <i className="icon devicon-git-plain-wordmark colored"></i>
+            <i className="icon devicon-github-plain-wordmark colored"></i>
+            <i className="icon devicon-heroku-plain-wordmark colored"></i>
+            <i className="icon devicon-jquery-plain-wordmark colored"></i>
+            <i className="icon devicon-mongodb-plain-wordmark colored"></i>
+            <i className="icon devicon-nodejs-plain-wordmark colored"></i> 
+            <i className="icon devicon-postgresql-plain-wordmark colored"></i>
+            <i className="icon devicon-rails-plain-wordmark colored"></i>
+            <i className="icon devicon-react-original-wordmark colored"></i>
+            <i className="icon devicon-ruby-plain-wordmark colored"></i>
+            <i className="icon devicon-slack-plain-wordmark colored"></i>
+            <i className="icon devicon-visualstudio-plain colored"></i>
+            <i className="icon devicon-wordpress-plain-wordmark colored"></i>
+        </div>
+
       </div>
       
       <div className='clear'></div>

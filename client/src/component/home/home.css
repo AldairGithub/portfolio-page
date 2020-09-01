@@ -62,6 +62,30 @@
   margin: auto;
   width: 50%;
 }
+.language-icons-container {
+  background-color: rgb(220, 220, 220);
+  height: 100px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-radius: 10px;
+  transition: width 900ms 500ms, border-radius 900ms 300ms;
+}
+.icon {
+  padding-right: 20px;
+  font-size: 50px;
+  transition: font-size 800ms 100ms;
+}
+.icon:hover {
+  font-size: 520%;
+}
+
+.language-icons-container:hover {
+  width: 100%;
+  border-radius: 0px;
+}
+
 @media only screen and (max-width: 768px) {
   .home-container {
     padding-top: 30%;
