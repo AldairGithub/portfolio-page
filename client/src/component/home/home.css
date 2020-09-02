@@ -127,4 +127,19 @@
     font-size: 5%;
   }
 }
+@media only screen and (max-width: 320px) {
 
+  .title-name {
+    font-size: 160%;
+    width: 100%;
+  }
+  .title-role {
+    font-size: 90%;
+  }
+  .icon {
+    font-size: 45px;
+  }
+  .icon:hover {
+    font-size: 45px;
+  }
+}

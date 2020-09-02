@@ -44,7 +44,7 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .footer-position {
-    height: 18%;
+  .attr-visible {
+    height: 23.5%;
   }
 }
