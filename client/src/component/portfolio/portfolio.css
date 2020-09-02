@@ -11,10 +11,6 @@
   height: 80px;
 }
 
-.projectLink {
-  text-decoration: none;
-  color: white;
-}
 
 @media only screen and (max-width: 375px) {
   .projectContainer {

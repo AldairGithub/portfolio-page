@@ -38,7 +38,6 @@
 }
 
 .title {
-  margin-bottom: 20px;
   animation: topToBottomFadeIn 1500ms ease-out;
 }
 
@@ -53,15 +52,21 @@
 }
 
 .iconContainer {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
+
+}
+.svg-icon {
+  width: 30px;
+  height: 100%;
+  padding-right: 15px;
 }
 
 .description-container {
   margin: auto;
   width: 50%;
 }
+
 .language-icons-container {
   background-color: rgb(220, 220, 220);
   height: 100px;
@@ -76,6 +81,7 @@
   padding-right: 20px;
   font-size: 50px;
   transition: font-size 800ms 100ms;
+  line-height: 60px;
 }
 .icon:hover {
   font-size: 520%;

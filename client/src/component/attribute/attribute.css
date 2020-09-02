@@ -2,7 +2,9 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  margin-top: 25px;
+  margin-top: 2%;
+  align-content: flex-end;
+  background-color: rgb(74, 163, 151);
 }
 
 .not-visible {
@@ -10,7 +12,17 @@
 }
 
 .attribution {
-  margin: 0 0 10px 20px;
+  margin: 0px 0px 10px 20px;
+  padding-top: 6px;
+  font-size: 20%;
+  color: black;
+}
+.copyright {
+  padding-left: 20px;
+  width: 100%;
+  background-color: rgb(74, 163, 151);
+  position: absolute;
+  bottom: 0;
   font-size: 20%;
   color: black;
 }

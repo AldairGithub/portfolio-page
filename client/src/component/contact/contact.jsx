@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
 import './contact.css'
 
-import { Alert } from 'react-bootstrap'
-
-
 export default function Contact() {
-  const [send, setSend] = useState('SEND')
-
+  const [message, setMessage] = useState('')
   const [contact, setContact] = useState({
     name: '',
     email: '',
@@ -42,7 +38,7 @@ export default function Contact() {
       body: encode({"form-name": "contact", ...contact })
     })
       .then(() =>
-      alert('Thank you for your message!')
+      setMessage(`Thank you ${contact.name} for the message`)
     )
       .catch(error => alert(error))
     e.preventDefault()
@@ -54,6 +50,9 @@ export default function Contact() {
         <div className='contactContainer'>
           <div className='contactInfo'>
             <h1 className='title'>Contact Me</h1>
+            <div className='message-sent'>
+              {message}
+            </div>
             <form
               className='contactForm'
               onSubmit={handleSubmit}
