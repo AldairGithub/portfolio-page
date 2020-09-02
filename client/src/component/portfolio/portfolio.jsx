@@ -55,7 +55,6 @@ export default function Portfolio() {
         </div>
 
       </div>
-      <div className='clear'></div>
     </>
   )
 }

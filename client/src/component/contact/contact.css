@@ -6,6 +6,7 @@
   color: white;
 }
 .contactContainer {
+  border-radius: 10px;
   width: 50%;
   margin-top: 5%;
   padding: 4%;
@@ -105,12 +106,22 @@
 
 @media only screen and (max-width: 375px) {
   .contactContainer {
-    width: 85%;
+    width: 100%;
+  }
+  .title {
+    padding-left: 20px;
+  }
+  .contactBox {
+    width: 80%;
   }
   .contactInput {
-    width: 100%;
+    width: 80%;
   }
   .contactText {
     flex-flow: column nowrap;
   }
+  .submitButton:hover {
+    background-color: rgb(74, 163, 151);
+  }
+
 }
