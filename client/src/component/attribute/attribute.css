@@ -28,9 +28,8 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .attribution-container {
-    flex-flow: column;
-    align-items: flex-start;
+  .visible {
+    margin-top: 61px;
   }
   .attribution {
     font-size: 3%;

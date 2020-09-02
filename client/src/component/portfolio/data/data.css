@@ -24,6 +24,7 @@
 }
 
 .portfolioImg {
+  border-radius: 10px;
   width: 80%;
   transition: width 1000ms ease 200ms;
 }
@@ -68,26 +69,6 @@
   transition: 500ms;
 }
 
-@media only screen and (max-width: 375px) {
-  .dataContainer {
-    flex-flow: column wrap;
-    width: 80%;
-    height: 100%;
-  }
-
-  .portfolioImg {
-    width: 80%;
-    padding-top: 10%;
-    padding-bottom: 5%;
-  }
-
-  .textContainer {
-    width: 80%;
-    margin-left: 0;
-    font-size: 70%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .dataContainer {
     width: 80%;
@@ -99,3 +80,26 @@
     font-size: 100%;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .dataContainer {
+    flex-flow: column wrap;
+    width: 100%;
+    height: 80%;
+  }
+
+  .portfolioImg {
+    width: 80%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .portfolio-button {
+    background-color: rgb(74, 163, 151, 0.7);
+    font-size: 20px;
+  }
+  .textContainer {
+    width: 90%;
+    font-size: 80%;
+  }
+}
+
