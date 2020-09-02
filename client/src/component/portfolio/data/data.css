@@ -1,4 +1,15 @@
-
+@keyframes button-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
 .dataContainer {
   display: flex;
   flex-flow: row nowrap;
@@ -23,14 +34,38 @@
 .dataContainer:hover .textContainer {
   opacity: 1;
 }
+.dataContainer:hover .portfolio-button{
+  animation: button-focus-in 500ms both;
+}
 
 .textContainer {
   text-align: center;
   opacity: 0;
   position: absolute;
-  font-size: 80%;
+  font-size: 90%;
   transition: 500ms;
   font-weight: bolder;
+  color: white;
+}
+.portfolio-button-container {
+  margin-top: 50px;
+}
+
+.portfolio-button {
+  font-size: 15px;
+  margin-right: 20px;
+  background: none;
+  width: 100px;
+  height: 50px;
+  color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+.portfolio-button:hover {
+  background-color: rgb(74, 163, 151, 0.7);
+  font-size: 20px;
+  transition: 500ms;
 }
 
 @media only screen and (max-width: 375px) {
