@@ -18,7 +18,7 @@
   margin-bottom: 10px;
   text-align: center;
 }
-.title {
+.contact-title {
   margin-bottom: 50px;
 }
 
@@ -108,7 +108,7 @@
   .contactContainer {
     width: 100%;
   }
-  .title {
+  .contact-title {
     padding-left: 20px;
   }
   .contactBox {

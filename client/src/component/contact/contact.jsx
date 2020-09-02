@@ -49,7 +49,7 @@ export default function Contact() {
       <div id='contact' className='contact'>
         <div className='contactContainer'>
           <div className='contactInfo'>
-            <h1 className='title'>Contact Me</h1>
+            <h1 className='contact-title'>Contact Me</h1>
             <div className='message-sent'>
               {message}
             </div>
