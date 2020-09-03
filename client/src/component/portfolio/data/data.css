@@ -1,29 +1,111 @@
+@keyframes button-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
 .dataContainer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   width: 50%;
-  height: 300px;
+  height: 400px;
   margin: 0 auto;
+  position: relative;
+  border-radius: 5%;
 }
 
 .portfolioImg {
-  width: 40%;
+  border-radius: 10px;
+  width: 80%;
+  transition: width 1000ms ease 200ms;
+}
+.dataContainer:hover .portfolioImg{
+  width: 100%;
+  opacity: 0.6;
+}
+.dataContainer:hover .textContainer {
+  opacity: 1;
+}
+.dataContainer:hover .portfolio-button{
+  animation: button-focus-in 500ms both;
 }
 
 .textContainer {
-  width: 30%;
-  font-size: 80%;
-  margin-left: 30px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  font-size: 90%;
+  transition: 500ms;
+  font-weight: bolder;
+  color: white;
+}
+.portfolio-button-container {
+  margin-top: 50px;
+}
+
+.portfolio-button {
+  font-size: 15px;
+  margin-right: 20px;
+  background: none;
+  width: 100px;
+  height: 50px;
+  color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+
+.portfolio-button:hover {
+  background-color: rgb(74, 163, 151, 0.7);
+  font-size: 20px;
+  transition: 500ms;
+}
+@media only screen and (max-width: 1024px) {
+  .dataContainer {
+    width: 70%;
+  }
+  .portfolioImg {
+    width: 70%;
+  }
+  .textContainer {
+    font-size: 140%;
+  }
+  .portfolio-button {
+    background-color: rgb(74, 163, 151, 0.7);
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dataContainer {
+    width: 100%;
+  }
+  .portfolioImg {
+    width: 80%;
+  }
+  .textContainer {
+    font-size: 130%;
+    width: 90%;
+  }
+  .portfolio-button {
+    background-color: rgb(74, 163, 151, 0.7);
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .dataContainer {
     flex-flow: column wrap;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
   }
 
   .portfolioImg {
@@ -31,22 +113,13 @@
     padding-top: 10%;
     padding-bottom: 5%;
   }
-
+  .portfolio-button {
+    background-color: rgb(74, 163, 151, 0.7);
+    font-size: 20px;
+  }
   .textContainer {
-    width: 80%;
-    margin-left: 0;
-    font-size: 70%;
+    width: 90%;
+    font-size: 80%;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .dataContainer {
-    width: 80%;
-  }
-  .portfolioImg {
-    width: 50%;
-  }
-  .textContainer {
-    font-size: 100%;
-  }
-}

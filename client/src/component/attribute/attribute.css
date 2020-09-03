@@ -1,0 +1,41 @@
+.visible {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribute-container{
+  padding-top: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-end;
+  background-color: rgb(74, 163, 151);
+}
+
+.not-visible {
+  display: none;
+}
+
+.attribution {
+  margin: 0px 0px 10px 20px;
+  font-size: 20%;
+  color: black;
+}
+.copyright {
+  padding-left: 1%;
+  width: 100%;
+  background-color: rgb(74, 163, 151);
+  font-size: 20%;
+  color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  .attribution {
+    font-size: 1%;
+    margin: 0;
+    padding-left: 1%;
+  }
+}
