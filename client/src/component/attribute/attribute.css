@@ -1,8 +1,16 @@
 .visible {
   display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribute-container{
+  padding-top: 1%;
+  display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  margin-top: 2%;
   align-content: flex-end;
   background-color: rgb(74, 163, 151);
 }
@@ -13,27 +21,21 @@
 
 .attribution {
   margin: 0px 0px 10px 20px;
-  padding-top: 6px;
   font-size: 20%;
   color: black;
 }
 .copyright {
-  padding-left: 20px;
+  padding-left: 1%;
   width: 100%;
   background-color: rgb(74, 163, 151);
-  position: absolute;
-  bottom: 0;
   font-size: 20%;
   color: black;
 }
 
 @media only screen and (max-width: 375px) {
-  .visible {
-    margin-top: 61px;
-  }
   .attribution {
-    font-size: 3%;
+    font-size: 1%;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 1%;
   }
 }
