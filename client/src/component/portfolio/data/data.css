@@ -68,16 +68,36 @@
   font-size: 20px;
   transition: 500ms;
 }
+@media only screen and (max-width: 1024px) {
+  .dataContainer {
+    width: 70%;
+  }
+  .portfolioImg {
+    width: 70%;
+  }
+  .textContainer {
+    font-size: 140%;
+  }
+  .portfolio-button {
+    background-color: rgb(74, 163, 151, 0.7);
+    font-size: 20px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .dataContainer {
-    width: 80%;
+    width: 100%;
   }
   .portfolioImg {
-    width: 50%;
+    width: 80%;
   }
   .textContainer {
-    font-size: 100%;
+    font-size: 130%;
+    width: 90%;
+  }
+  .portfolio-button {
+    background-color: rgb(74, 163, 151, 0.7);
+    font-size: 20px;
   }
 }
 
