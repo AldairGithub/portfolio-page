@@ -33,7 +33,7 @@ export default function Home() {
           </div>
            
         <div className='description-container'>
-          <p>With a background in law and customer experience, I love to focus on user-friendly experience and create web applications using React.js</p>
+          <p>With a legal background in customer experience, I love to focus on user-friendly apps that can make the lives of people easier. My attention to detail and love for developing and using new applications has turned me into a web developer</p>
         </div>
         {/* Icon languages */}
         <div className='language-icons-container'>
