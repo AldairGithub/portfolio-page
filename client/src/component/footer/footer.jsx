@@ -11,7 +11,7 @@ export default function Footer(props) {
         <a className='footer-link' href='#home'>Home</a>
         <a className='footer-link' href='#portfolio'>Portfolio</a>
         <a className='footer-link' href='#contact'>Contact</a>
-        <a className='footer-link' href='https://www.docdroid.net/XTZ7LO1' target='_blank' rel='noopener noreferrer'>Resume</a>
+        <a className='footer-link' href='https://drive.google.com/file/d/14Rrbn_m2MD-HgBEvZYoF-n-il9LKJWzI/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
       </div>
       <Attribute isBottom={props.isBottom}/>
     </div>
