@@ -2,12 +2,8 @@ import React from 'react'
 import './data.css'
 
 export default function Data(props) {
-
-  const { img } = props
-  const { title } = props
-  const { description } = props
-  const { siteLink } = props
-  const { codeLink } = props
+  const { img, title, description, siteLink, codeLink } = props
+  
   return (
     <div className='dataContainer'>
       <img className='portfolioImg' src={img} alt={title}/>
